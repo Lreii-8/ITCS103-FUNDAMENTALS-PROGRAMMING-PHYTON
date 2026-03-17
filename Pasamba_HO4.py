@@ -11,6 +11,17 @@ title.grid(row=0,column=0)
 frame = tk.Frame(window, bg = "lightblue", width = 50)
 frame.grid(padx = 10)
 
+def submit():
+    fname = first_entry.get()
+    mname = middle_entry.get()
+    lname = last_entry.get()
+    gender = gender_var.get()
+
+    print("Profile Info:")
+    print("Name:", firstname, middlename, lastname)
+    print("Gender:", gender)
+    print(age_label.cget("text"))
+
 #entry
 name = tk.Label(frame, text = "First name", bg = "lightblue")
 name.grid(row = 2, column = 0, pady = 5)
